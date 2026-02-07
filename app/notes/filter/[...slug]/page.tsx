@@ -3,6 +3,7 @@ import {
   HydrationBoundary,
   dehydrate,
 } from '@tanstack/react-query';
+import { Metadata } from 'next';
 
 import { FetchTagNote } from '@/types/note';
 import { fetchFilterNotes } from '@/lib/api';
@@ -12,6 +13,31 @@ import css from './page.module.css';
 
 interface NotesProps {
   params: Promise<{ slug: string[] }>;
+}
+
+export async function generateMetadata({
+  params,
+}: NotesProps): Promise<Metadata> {
+  const { slug } = await params;
+  const tag = slug[0];
+
+  return {
+    title: `${tag}`,
+    description: `Page for ${tag} tag`,
+    openGraph: {
+      title: `${tag}`,
+      description: `Page for ${tag} tag`,
+      url: '',
+      images: [
+        {
+          url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'logo',
+        },
+      ],
+    },
+  };
 }
 
 export default async function Notes({ params }: NotesProps) {
