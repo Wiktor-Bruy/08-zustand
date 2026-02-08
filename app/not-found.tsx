@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Metadata } from 'next';
 
-export const matadata: Metadata = {
+export const metadata: Metadata = {
   title: 'Not found',
   description: 'Page is not found',
   openGraph: {

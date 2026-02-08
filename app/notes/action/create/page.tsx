@@ -4,13 +4,13 @@ import { Metadata } from 'next';
 
 import NoteForm from '@/components/NoteForm/NoteForm';
 
-export const metadada: Metadata = {
+export const metadata: Metadata = {
   title: 'Create note',
   description: 'Page for created note',
   openGraph: {
     title: 'Create note',
     description: 'Page for created note',
-    url: 'https://08-zustand-steel-nine.vercel.app/',
+    url: 'https://08-zustand-steel-nine.vercel.app/notes/action/create',
     images: [
       {
         url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
