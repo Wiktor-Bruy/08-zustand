@@ -4,25 +4,7 @@ import css from './page.module.css';
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-// import { Metadata } from 'next';
-
-// export const metadata: Metadata = {
-//   title: 'Not found',
-//   description: 'Page is not found',
-//   openGraph: {
-//     title: 'Not found',
-//     description: 'Page is not found',
-//     url: 'https://08-zustand-steel-nine.vercel.app/',
-//     images: [
-//       {
-//         url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
-//         width: 1200,
-//         height: 630,
-//         alt: 'logo',
-//       },
-//     ],
-//   },
-// };
+import { Metadata } from 'next';
 
 export default function NotFound() {
   const router = useRouter();
@@ -40,3 +22,21 @@ export default function NotFound() {
     </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: 'Not found',
+  description: 'Page is not found',
+  openGraph: {
+    title: 'Not found',
+    description: 'Page is not found',
+    url: 'https://08-zustand-steel-nine.vercel.app/',
+    images: [
+      {
+        url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'logo',
+      },
+    ],
+  },
+};
