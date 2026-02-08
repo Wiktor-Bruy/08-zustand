@@ -2,10 +2,11 @@ import css from './NoteFormFormik.module.css';
 
 import { ErrorMessage, Field, Form, Formik, type FormikHelpers } from 'formik';
 import { useId } from 'react';
-import { type NewNote } from '@/types/note';
 import * as Yup from 'yup';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
+
 import { createNote } from '@/lib/api';
+import { type NewNote } from '@/types/note';
 
 interface NoteFormProps {
   onCancel: () => void;
