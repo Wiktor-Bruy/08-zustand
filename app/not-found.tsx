@@ -12,7 +12,7 @@ export const matadata: Metadata = {
   openGraph: {
     title: 'Not found',
     description: 'Page is not found',
-    url: '',
+    url: 'https://08-zustand-steel-nine.vercel.app/',
     images: [
       {
         url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',

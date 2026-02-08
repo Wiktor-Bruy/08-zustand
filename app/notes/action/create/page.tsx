@@ -10,7 +10,7 @@ export const metadada: Metadata = {
   openGraph: {
     title: 'Create note',
     description: 'Page for created note',
-    url: '',
+    url: 'https://08-zustand-steel-nine.vercel.app/',
     images: [
       {
         url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
